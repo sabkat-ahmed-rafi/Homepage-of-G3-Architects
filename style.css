@@ -17,7 +17,7 @@ header {
     padding: 0px 228px;
     padding-top: 50px;
 }
-.navbar h1 {
+.navbar div h1 {
     font-size: 45px;
 }
 .navbar ul {
@@ -60,3 +60,38 @@ header {
 .navbar-image {
     margin: 40px 60px;
 }
+/* setting responsiveness for small device  */
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .navbar div h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .navbar-text p {
+        padding: 0px 15px;
+    }
+    header {
+        height: 800px;
+    }
+}
+/* setting responsiveness for medium device  */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .navbar div h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .navbar-text p {
+        padding: 0px 15px;
+    }
+    header {
+        height: 820px;
+    }
+}
+/* Quick section is implemented here  */
